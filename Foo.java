@@ -1,10 +1,13 @@
-
+import java.util.Scanner;
 
 public class Foo {
     public static void main(String[] args) {
-        byte b = 200;
-        int i = 100;
-    
-        System.out.println(b+i);
+        Scanner scanner = new Scanner(System.in); 
+        System.out.print("Enter a number:"); 
+        String name = scanner.nextLine(); 
+        System.out.println("Hello, " + name + "!");
+        String old = scanner.nextLine(); 
+        scanner.close();
     }
 }
+
